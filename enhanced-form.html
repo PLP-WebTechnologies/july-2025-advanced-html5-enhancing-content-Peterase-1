@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HTML5 content and form structure with validation">
+  <title>HTML5 Enhanced Page & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Demonstration</h1>
+    <nav>
+      <ul>
+        <li><a href="#content-section">Content</a></li>
+        <li><a href="#media-section">Media</a></li>
+        <li><a href="#form-section">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Section 1: Content using lists and tables -->
+    <section id="content-section">
+      <h2>Popular Programming Languages</h2>
+
+      <h3>Top 5 Languages (Ordered List)</h3>
+      <ol>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>C++</li>
+      </ol>
+
+      <h3>Use Cases (Unordered List)</h3>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Science</li>
+        <li>Mobile Apps</li>
+        <li>Game Development</li>
+        <li>Embedded Systems</li>
+      </ul>
+
+      <h3>Comparison Table</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Typing</th>
+            <th>Primary Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Dynamically Typed</td>
+            <td>AI, Data Science</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Dynamically Typed</td>
+            <td>Web Development</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Statically Typed</td>
+            <td>Enterprise Software</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 2: Media -->
+    <section id="media-section">
+      <h2>Media Showcase</h2>
+
+      <h3>Sample Image</h3>
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder Sample Image" />
+        <figcaption>A simple placeholder image used for demonstration.</figcaption>
+      </figure>
+
+      <h3>Sample Audio</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Sample Video</h3>
+      <video width="400" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section 3: HTML5 Form -->
+    <section id="form-section">
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required /><br /><br />
+
+          <label for="age">Age:</label><br />
+          <input type="number" id="age" name="age" min="13" max="100" required /><br /><br />
+
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="d
