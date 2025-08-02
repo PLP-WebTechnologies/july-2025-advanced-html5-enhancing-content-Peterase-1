@@ -112,4 +112,58 @@
           <input type="number" id="age" name="age" min="13" max="100" required /><br /><br />
 
           <label for="dob">Date of Birth:</label><br />
-          <input type="date" id="dob" name="d
+          <input type="date" id="dob" name="dob" required /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Preferences</legend>
+
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" minlength="5" required /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" pattern=".{6,}" placeholder="At least 6 characters" required /><br /><br />
+
+          <label for="color">Favorite Color:</label><br />
+          <input type="color" id="color" name="color" /><br /><br />
+
+          <label>Gender:</label><br />
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Subscription Options</legend>
+
+          <label for="plan">Choose a Plan:</label>
+          <select id="plan" name="plan" required>
+            <option value="">--Please choose an option--</option>
+            <option value="free">Free</option>
+            <option value="pro">Pro</option>
+            <option value="enterprise">Enterprise</option>
+          </select><br /><br />
+
+          <label for="bio">Short Bio:</label><br />
+          <textarea id="bio" name="bio" rows="4" cols="40" maxlength="200" placeholder="Tell us something about yourself..." required></textarea><br /><br />
+
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I agree to the terms and conditions</label><br /><br />
+        </fieldset>
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Learning Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
